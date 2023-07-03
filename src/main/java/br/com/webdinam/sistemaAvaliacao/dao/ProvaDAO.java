@@ -86,7 +86,7 @@ public class ProvaDAO {
         return provas;
     }
 
-    // Outros métodos conforme necessário
+  
 
     public void fecharConexao() {
         emf.close();
