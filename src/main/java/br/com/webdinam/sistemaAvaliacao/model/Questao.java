@@ -151,9 +151,9 @@ public class Questao {
 
     public int getPontuacao(String respostaEscolhida){
             if (respostaEscolhida.equals(questaoCorreta)) {
-                return 1; // Retorna 1 ponto se a resposta estiver correta
+                return 1; 
             } else {
-                return 0; // Retorna 0 ponto se a resposta estiver incorreta
+                return 0; 
             }
 
     }
