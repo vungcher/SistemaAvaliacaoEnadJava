@@ -20,5 +20,4 @@ public class TipoQuestaoController {
         return tipoQuestaoService.getAllTiposQuestao();
     }
 
-    // Implemente os demais métodos CRUD e as demais operações necessárias
 }
