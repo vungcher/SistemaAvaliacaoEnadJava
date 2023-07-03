@@ -11,7 +11,7 @@ import java.util.List;
 
 @Repository
 public class ResultadoDAO {
-    //@PersistenceContext
+
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -39,7 +39,7 @@ public class ResultadoDAO {
         entityManager.remove(resultado);
     }
 
-    // Outros métodos relevantes para o DAO...
+    
 
 }
 
