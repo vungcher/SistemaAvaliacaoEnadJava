@@ -56,6 +56,6 @@ public class TipoQuestao {
     public int obterQuantidadeQuestoes() {
         return questoes.size();
     }
-    // Outros métodos conforme necessário
+    
 }
 
