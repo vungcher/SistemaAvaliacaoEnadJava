@@ -31,12 +31,12 @@ public class ProvaService {
     }
 
     public void atualizarProva(Prova prova) {
-        // Lógica de validação ou regras de negócio antes de atualizar a prova
+        
         provaDAO.atualizar(prova);
     }
 
     public void excluirProva(Prova prova) {
-        // Lógica de validação ou regras de negócio antes de excluir a prova
+     
         provaDAO.excluir(prova);
     }
 
