@@ -21,5 +21,5 @@ public class TipoUsuarioController {
         return tipoUsuarioService.getAllTiposUsuario();
     }
 
-    // Implemente os demais métodos CRUD e as demais operações necessárias
+    
 }
