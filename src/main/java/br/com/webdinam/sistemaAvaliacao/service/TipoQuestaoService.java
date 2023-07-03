@@ -28,5 +28,5 @@ public class TipoQuestaoService {
         tipoQuestaoRepository.deleteById(id);
     }
 
-    // Implemente os demais métodos e operações necessárias
+   
 }
