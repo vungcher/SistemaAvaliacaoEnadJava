@@ -29,14 +29,14 @@ public class ProvaController {
 
     @PostMapping
     public Prova createProva(@RequestBody Prova prova) {
-        // Lógica de validação ou regras de negócio antes de criar a prova
+        
 
         return provaService.criarProva(prova.getNome(), prova.getQuestoes());
     }
 
     @PutMapping("/{id}")
     public void updateProva(@PathVariable("id") Long id, @RequestBody Prova prova) {
-        // Lógica de validação ou regras de negócio antes de atualizar a prova
+       
 
         Prova provaExistente = provaService.buscarProvaPorId(id);
         if (provaExistente != null) {
@@ -48,7 +48,7 @@ public class ProvaController {
 
     @DeleteMapping("/{id}")
     public void deleteProva(@PathVariable("id") Long id) {
-        // Lógica de validação ou regras de negócio antes de excluir a prova
+        
 
         Prova prova = provaService.buscarProvaPorId(id);
         if (prova != null) {
