@@ -1,7 +1,5 @@
 package br.com.webdinam.sistemaAvaliacao.model;
 
-//import jakarta.persistence.*;
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -49,7 +47,7 @@ public class TipoUsuario {
         }
     }
 
-    // Método para atualizar o tipo de usuário no banco de dados
+
     public void atualizar() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
@@ -70,7 +68,7 @@ public class TipoUsuario {
         }
     }
 
-    // Método para excluir o tipo de usuário do banco de dados
+    
     public void excluir() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
@@ -92,7 +90,7 @@ public class TipoUsuario {
         }
     }
 
-    // Método para buscar um tipo de usuário pelo ID
+    
     public static TipoUsuario buscarPorId(int idTipoUsuario) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
@@ -105,7 +103,7 @@ public class TipoUsuario {
         return tipoUsuario;
     }
 
-    // Método para listar todos os tipos de usuários
+    
     public static List<TipoUsuario> listarTodos() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
