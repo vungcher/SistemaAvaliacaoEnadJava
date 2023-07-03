@@ -1,8 +1,6 @@
 package br.com.webdinam.sistemaAvaliacao.model;
 
 
-//import jakarta.persistence.*;
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -21,7 +19,7 @@ public class Usuario {
     @JoinColumn(name = "tipousuario_idtipousuario")
     private TipoUsuario tipoUsuario;
 
-    // Outros atributos e anotações JPA
+
 
     public int getIdUsuario() {
         return idUsuario;
@@ -83,7 +81,7 @@ public class Usuario {
         }
     }
 
-    // Método para atualizar o usuário no banco de dados
+
     public void atualizar() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
@@ -104,7 +102,7 @@ public class Usuario {
         }
     }
 
-    // Método para excluir o usuário do banco de dados
+    
     public void excluir() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
@@ -126,7 +124,7 @@ public class Usuario {
         }
     }
 
-    // Método para buscar um usuário pelo ID
+    
     public static Usuario buscarPorId(int idUsuario) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
@@ -139,7 +137,7 @@ public class Usuario {
         return usuario;
     }
 
-    // Método para listar todos os usuários
+    
     public static List<Usuario> listarTodos() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("sistemaAvaliacaoPU");
         EntityManager em = emf.createEntityManager();
