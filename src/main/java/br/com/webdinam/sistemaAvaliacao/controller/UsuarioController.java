@@ -20,5 +20,5 @@ public class UsuarioController {
         return usuarioService.getAllUsuarios();
     }
 
-    // Implemente os demais métodos CRUD e as demais operações necessárias
+    
 }
