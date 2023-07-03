@@ -31,14 +31,14 @@ public class QuestaoController {
 
     @PostMapping
     public void createQuestao(@RequestBody Questao questao) {
-        // Lógica de validação ou regras de negócio antes de criar a questão
+        
 
         questaoService.save(questao);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<?> updateQuestao(@PathVariable("id") Integer id, @RequestBody Questao questao) {
-        // Lógica de validação ou regras de negócio antes de atualizar a questão
+        
 
         Questao questaoExistente = questaoService.findById(id);
         if (questaoExistente != null) {
@@ -53,7 +53,7 @@ public class QuestaoController {
 
     @DeleteMapping("/{id}")
     public void deleteQuestao(@PathVariable("id") int id) {
-        // Lógica de validação ou regras de negócio antes de excluir a questão
+        
 
         Questao questao = questaoService.findById(id);
         if (questao != null) {
